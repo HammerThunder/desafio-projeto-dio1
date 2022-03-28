@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Filipe"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-03-21 08:45:11 "/>
+        <attribute name="created" value="RmlsaXBlO0ZJTElQT05FU0lBOzIwMjItMDMtMjE7IjA2OjA3OjE0ICI7MjYwNQ=="/>
+        <attribute name="edited" value="RmlsaXBlO0ZJTElQT05FU0lBOzIwMjItMDMtMjE7IjA4OjQ1OjExICI7MjsyNzE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="maxTab, valor, indice" type="Integer" array="False" size=""/>
+            <assign variable="indice" expression="0"/>
+            <output expression="&quot;Qual n&#250;mero voc&#235; deseja?&quot;" newline="True"/>
+            <input variable="valor"/>
+            <output expression="&quot;Tabuada at&#233; qual n&#250;mero?&quot;" newline="True"/>
+            <input variable="maxTab"/>
+            <while expression="indice &lt;= maxTab">
+                <assign variable="indice" expression="indice + 1"/>
+                <output expression="valor &amp; &quot; vezes &quot; &amp; indice &amp; &quot; = &quot; &amp; valor*indice" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
